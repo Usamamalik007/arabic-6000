@@ -12,10 +12,10 @@ y=0
 z=0
 
 while aa<1000:
-    w=randint(1, 525)
-    x=randint(1, 525)
-    y=randint(1, 525)
-    z=randint(1, 525)
+    w=randint(1, 3022)
+    x=randint(1, 3022)
+    y=randint(1, 3022)
+    z=randint(1, 3022)
     print(str(w)+","+str(x)+","+str(y)+","+str(z)+",")
     img1 = cv2.imread(str(x)+'.jpg')
     img2 = cv2.imread(str(y)+'.jpg')
