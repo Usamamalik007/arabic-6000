@@ -16,16 +16,16 @@ while aa<1000:
     z=randint(1, 3022)
     print(str(y)+","+str(z)+",")
 
-    img2 = cv2.imread("arabic-6000/"+str(y)+'.jpg')
-    img3 = cv2.imread("arabic-6000/"+str(z)+'.jpg')
+    img2 = cv2.imread(str(y)+'.jpg')
+    img3 = cv2.imread(str(z)+'.jpg')
 	
                
     vis = np.concatenate((img2,img3), axis=1)
-    cv2.imwrite("arabic-6000/"+"_"+str(y)+"_"+str(z)+'.jpg', vis)
-    with open("arabic-6000/"+"_"+str(y)+"_"+str(z)+'.gt.txt', 'w',encoding="utf-8") as f:
-        with open("arabic-6000/"+str(y)+'.gt.txt', 'r',encoding="utf-8") as myfile:
+    cv2.imwrite("_"+str(y)+"_"+str(z)+'.jpg', vis)
+    with open("_"+str(y)+"_"+str(z)+'.gt.txt', 'w',encoding="utf-8") as f:
+        with open(str(y)+'.gt.txt', 'r',encoding="utf-8") as myfile:
             b=myfile.read()
-        with open("arabic-6000/"+str(z)+'.gt.txt', 'r',encoding="utf-8") as myfile:
+        with open(str(z)+'.gt.txt', 'r',encoding="utf-8") as myfile:
             c=myfile.read()
         f.write(str(c)+" "+str(b) )
 
