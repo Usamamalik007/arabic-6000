@@ -1,5 +1,4 @@
 from PIL import Image
-from resizeimage import resizeimage
 import os
 import cv2
 import numpy as np
