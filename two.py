@@ -16,8 +16,8 @@ while aa<1000:
     z=randint(1, 3022)
     print(str(y)+","+str(z)+",")
 
-    img2 = cv2.imread(str(y)+'.jpg')
-    img3 = cv2.imread(str(z)+'.jpg')
+    img2 = cv2.imread("arabic-6000/"+str(y)+'.jpg')
+    img3 = cv2.imread("arabic-6000/"+str(z)+'.jpg')
 	
                
     vis = np.concatenate((img2,img3), axis=1)
