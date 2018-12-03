@@ -22,7 +22,7 @@ while aa<1000:
                
     vis = np.concatenate((img1, img2,img3), axis=1)
     cv2.imwrite("arabic-6000/"+"_"+str(x)+"_"+str(y)+"_"+str(z)+'.jpg', vis)
-    with open("arabic-6000/"+"_"+str(x)+"_"+str(y)+"_"+str(z)+"_"+'.gt.txt', 'w',encoding="utf-8") as f:
+    with open("arabic-6000/"+"_"+str(x)+"_"+str(y)+"_"+str(z)+'.gt.txt', 'w',encoding="utf-8") as f:
         with open("arabic-6000/"+str(x)+'.gt.txt', 'r',encoding="utf-8") as myfile:
             a=myfile.read()
         with open("arabic-6000/"+str(y)+'.gt.txt', 'r',encoding="utf-8") as myfile:
